@@ -1,0 +1,131 @@
+div.bg-txt,
+div.bg-txt-about {
+    display: flex;
+    max-width: 1680px;
+    margin: auto;
+}
+
+div.about-us-bg,
+div.contact-us-bg {
+    background-color: var(--grey);
+    border-radius: 9px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 2;
+    flex-direction: row;
+    row-gap: 10;
+    min-height: 620px;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+}
+
+div.contact-us-bg {
+    padding-left: 40px;
+}
+
+div.about-us-bg p,
+div.contact-us-bg h2,
+div.contact-us-bg h3 {
+    font-size: 25px;
+}
+
+div.contact-us-bg h2 {
+    font-weight: var(--Bold);
+}
+
+div.contact-us-bg h3 {
+    font-weight: var(--Medium);
+}
+
+div.contact-us-bg h3 i {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+div.contact-us-bg h3.bottom {
+    margin-top: 80px;
+}
+
+div.bg-txt-about img {
+    flex: 1;
+    width: 547px;
+    height: 640px;
+    border-radius: 9px;
+    object-fit: cover;
+}
+
+div.bg-txt-about .about-us-bg img {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+    object-fit: cover;
+    display: none;
+}
+
+/*Transitions*/
+div.bg-txt,
+div.bg-txt-about,
+div.about-us-bg,
+div.bg-txt-about img,
+div.bg-txt-about .about-us-bg img {
+    transition: 0.2s;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1300px) {
+    div.bg-txt-about {
+        display: block;
+    }
+
+    div.about-us-bg,
+    div.contact-us-bg {
+        margin-right: 0px;
+    }
+
+    div.bg-txt-about img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    div.about-us-bg p {
+        font-size: 22px;
+    }
+
+    div.contact-us-bg h2,
+    div.contact-us-bg h3 {
+        font-size: 20px;
+    }
+
+    div.contact-us-bg {
+        padding: 20px;
+    }
+
+    div.about-us-bg,
+    div.contact-us-bg {
+        border-radius: 0px;
+    }
+
+    div.container {
+        margin: 0px 0px 0px 0px;
+    }
+
+    div.bg-txt-about img {
+        display: none;
+    }
+
+    div.bg-txt-about .about-us-bg img {
+        display: block;
+    }
+}
+
+@media (min-height: 1090px) {
+
+    div.bg-txt,
+    div.bg-txt-about {
+        margin-bottom: 200px;
+    }
+
+}

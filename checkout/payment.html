@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8404d11a1b.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://preeminent-eclair-d2e1df.netlify.app/ -->
+    <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3676917, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/navigation-footer.css" rel="stylesheet">
+    <link href="../css/checkout.css" rel="stylesheet">
+    <script src="../js/index.js"></script>
+    <title>Payment - Checkout | GameHub</title>
+    <meta name="description" content="Choose your payment method.">
+    <link rel="icon" type="image/png" href="../images/GameHub_Logo.png">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="../"><img src="../images/GameHub_Logo.png" alt="GameHub logo in header"></a></div>
+        <input type="checkbox" id="menu-checkbox" aria-label="Mobile navigation menu">
+        <label for="menu-checkbox" class="hamburger-icon" aria-label="Hamburger icon for mobile nav"><i class="fa-solid fa-bars"></i></label>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../about.html">About us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="../cart.html" aria-label="Go to cart" id="cart-content"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="checkout-status">
+                <a class="status-btn-state-2" href="../cart.html" style="margin-left: 0px;"><i
+                        class="fa-regular fa-circle-check show-i"></i><span>Cart</span></a>
+                <a href="#" class="status-btn-state-2"><i
+                        class="fa-regular fa-circle-check"></i><span>Payment</span></a>
+                <a href="#" class="status-btn"><i class="fa-regular fa-circle-check"></i><span>Summary</span></a>
+                <a href="#" class="status-btn" style="margin-right: 0px;"><i
+                        class="fa-regular fa-circle-check"></i><span>Order complete</span></a>
+            </div>
+            <div class="payment-method">
+                <h1 class="payment">Choose payment method</h1>
+                <div class="methods">
+                    <button><i class="fa-brands fa-paypal"></i> PayPal</button>
+                    <button><i class="fa-brands fa-cc-stripe"></i> Card</button>
+                </div>
+                <div class="delivery-email">
+                    <h2>Delivery email: <i class="fa-solid fa-circle-info"></i></h2>
+                    <input type="email" name="delivery-email" aria-label="Delivery email input" class="input-email">
+                </div>
+                <div class="continue-div">
+                    <a href="summary.html" class="continue-btn">Go to summary</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="f">
+        <div class="f-content">
+            <div class="f-content-flex">
+                <img class="f-logo" src="../images/GameHub_Logo.png" alt="GameHub logo in footer">
+                <div class="f-links">
+                    <p class="f-links-title">GameHub</p>
+                    <a class="f-link" href="../about.html">
+                        <p>About us</p>
+                    </a>
+                    <a class="f-link" href="../contact.html">
+                        <p>Contact us</p>
+                    </a>
+                </div>
+                <div class="f-links">
+                    <p class="f-links-title">Refunds & Legal</p>
+                    <a class="f-link" href="#">
+                        <p>Refunds</p>
+                    </a>
+                    <a class="f-link" href="#">
+                        <p>Legal</p>
+                    </a>
+                </div>
+                <div class="f-links">
+                    <p class="f-links-title">Terms & Policies</p>
+                    <a class="f-link" href="#">
+                        <p>Terms & Conditions</p>
+                    </a>
+                    <a class="f-link" href="#">
+                        <p>Privacy Policy</p>
+                    </a>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <p class="f-copyright">© GameHub 2023</p>
+                <div class="f-social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

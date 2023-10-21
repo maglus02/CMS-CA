@@ -1,0 +1,358 @@
+/*Checkout status*/
+.checkout-status {
+    display: flex;
+    flex-flow: nowrap row;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+.checkout-status span {
+    margin-left: -35px;
+}
+
+.checkout-status .status-btn,
+.checkout-status .status-btn-state-2 {
+    background-color: var(--grey);
+    color: var(--status-btn-txt);
+    border: 2px solid var(--grey);
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 25px;
+    font-weight: var(--SemiBold);
+    text-align: center;
+    border-radius: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.payment-method .methods button,
+.checkout-status .status-btn-state-2 {
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.checkout-status .status-btn-state-2 {
+    color: var(--primary);
+}
+
+.checkout-status i {
+    float: left;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.fa-regular.fa-circle-check.show-i {
+    opacity: 1;
+}
+
+/*Payment method*/
+.payment-method {
+    max-width: 1200px;
+    margin: auto;
+    flex: 1;
+}
+
+.payment-method .payment,
+.payment-method .delivery-email h2 {
+    font-size: 25px;
+    font-weight: var(--Medium);
+    margin-top: 50px;
+}
+
+.payment-method .payment {
+    text-align: left;
+}
+
+.payment-method .methods {
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 10px;
+}
+
+.payment-method .methods button {
+    width: 100%;
+    padding: 30px 0px;
+    border-radius: 9px;
+    font-size: 25px;
+    font-weight: var(--Medium);
+    color: var(--black);
+    background-color: transparent;
+}
+
+.payment-method .continue-div .continue-btn,
+.payment-method .methods button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.payment-method .delivery-email {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    max-width: 500px;
+}
+
+.payment-method .delivery-email h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.payment-method .delivery-email h2 i {
+    cursor: pointer;
+}
+
+.payment-method .delivery-email .input-email {
+    width: 100%;
+    padding: 15px;
+    border-radius: 9px;
+    border: 2px solid var(--tertiary);
+    box-sizing: border-box;
+}
+
+.payment-method .continue-div {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.payment-method .continue-div .continue-btn {
+    font-size: 35px;
+    cursor: pointer;
+    margin: 80px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: var(--SemiBold);
+}
+
+.payment-method .continue-div .continue-btn:hover {
+    filter: brightness(85%);
+}
+
+/*Summary page*/
+h1.summary-title {
+    margin: 40px 0px;
+    font-size: 40px;
+    font-weight: var(--SemiBold);
+}
+
+.quantity h2 {
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.product-price h2 {
+    margin-right: 100px;
+}
+
+.delivery-email-summary,
+.payment-method-summary-mobile {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 9px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: var(--grey);
+    width: 100%;
+    display: flex;
+}
+
+.payment-method-summary-mobile {
+    display: none;
+}
+
+.delivery-email-summary .h,
+.payment-method-summary .h,
+.payment-method-summary-mobile .h {
+    font-size: 20px;
+    font-weight: var(--SemiBold);
+    margin-top: 0px;
+}
+
+.delivery-email-summary .email {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.payment-method-summary .method,
+.payment-method-summary-mobile .method {
+    font-size: 18px;
+    font-weight: var(--Medium);
+}
+
+/*Order complete*/
+.order-complete {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.order-complete i {
+    font-size: 80px;
+    margin-top: 100px;
+    color: var(--primary);
+}
+
+.order-complete h1 {
+    font-size: 50px;
+    font-weight: var(--SemiBold);
+}
+
+.order-complete p {
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+
+/*Transitions*/
+.checkout-status .status-btn,
+.checkout-status,
+.checkout-status .status-btn-state-2,
+.payment-method .delivery-email,
+.payment-method .methods,
+.payment-method .payment,
+.payment-method .delivery-email p,
+.payment-method .methods button,
+.product-price p,
+.delivery-email-summary .h,
+.payment-method-summary .h,
+.payment-method-summary-mobile .h,
+.delivery-email-summary .email,
+.payment-method-summary .method,
+.payment-method-summary-mobile .method,
+.order-complete i,
+.order-complete h1,
+.order-complete p,
+h1.summary-title {
+    transition: 0.2s;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1400px) {
+
+    .checkout-status .status-btn,
+    .checkout-status .status-btn-state-2 {
+        font-size: 18px;
+        padding: 15px 0px;
+    }
+
+    .checkout-status span {
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    div.container {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+
+    .checkout-status .status-btn,
+    .checkout-status .status-btn-state-2 {
+        border-radius: 100px;
+        width: 44px;
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .checkout-status .status-btn-state-2 {
+        background-color: var(--primary);
+        color: var(--secondary);
+    }
+
+    .checkout-status span {
+        display: none;
+    }
+
+    .checkout-status i {
+        float: none;
+        margin: 0;
+    }
+
+    .checkout-status {
+        justify-content: center;
+    }
+
+    .payment-method .methods {
+        flex-direction: column;
+    }
+
+    .payment-method .payment {
+        text-align: center;
+    }
+
+    .payment-method .payment,
+    .payment-method .delivery-email p {
+        font-size: 20px;
+    }
+
+    .order-complete h1 {
+        font-size: 35px;
+    }
+
+    .order-complete p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .payment-method-summary-mobile {
+        display: block;
+    }
+
+    .payment-method-summary {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1.summary-title {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .product-price h2 {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+
+    .delivery-email-summary .h,
+    .payment-method-summary .h,
+    .payment-method-summary-mobile .h {
+        font-size: 17px;
+    }
+
+    .delivery-email-summary .email,
+    .payment-method-summary .method,
+    .payment-method-summary-mobile .method {
+        font-size: 15px;
+    }
+}
+
+@media (min-height: 1090px) {
+    .payment-method .continue-div .continue-btn {
+        margin-bottom: 200px;
+    }
+
+}
