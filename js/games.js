@@ -54,11 +54,11 @@ function sortGamesByPopularity() {
     displayGames();
 }
 function sortGamesByPriceLowest() {
-    games.sort((a, b) => a.price - b.price);
+    games.sort((a, b) => a.prices.price - b.prices.price);
     displayGames();
 }
 function sortGamesByPriceHighest() {
-    games.sort((a, b) => b.price - a.price);
+    games.sort((a, b) => b.prices.price - a.prices.price);
     displayGames();
 }
 
