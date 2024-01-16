@@ -1,6 +1,6 @@
 # Cross-course project
 
-![image](https://rimgo.kling.gg/gZ2V2k3.png)
+![image](https://i.imgur.com/gZ2V2k3.png)
 
 Continuation of the cross-course project. A project that spans several courses. 
 
